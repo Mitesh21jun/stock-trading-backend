@@ -133,6 +133,31 @@ Content-Type: application/json
 > ⚡ `method` defaults to `fifo` if not provided.
 
 ---
+## 📦 Get Lots API Example
+
+Fetch available lots for a stock or by a specific trade ID:
+
+```http
+GET /api/lots?stock_name=Microsoft
+```
+
+Optional Query Parameters:
+- `stock_name` → Filter by stock name.
+- `trade_id` → Filter by specific trade.
+
+Sample Response:
+```json
+[
+  {
+    "stock_name": "Microsoft",
+    "available_quantity": 30,
+    "status": "OPEN",
+    "purchase_price": 100,
+    "broker_name": "Broker A"
+  }
+]
+```
+---
 
 ## 📊 Stock Summary Response
 
