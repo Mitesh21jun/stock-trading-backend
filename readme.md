@@ -1,8 +1,3 @@
-Awesome! 🔥  
-Here’s your same **README.md** but now with ✨ badges ✨ at the top to make it look **professional and clean** for GitHub:
-
----
-
 # 📈 Stock Trading API - Fundtec
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
