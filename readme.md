@@ -1,4 +1,16 @@
+Awesome! 🔥  
+Here’s your same **README.md** but now with ✨ badges ✨ at the top to make it look **professional and clean** for GitHub:
+
+---
+
 # 📈 Stock Trading API - Fundtec
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat&logo=mongodb&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
+---
 
 A simple Node.js Express API to manage stock trades with **FIFO** and **LIFO** lot management strategies.
 
@@ -6,8 +18,10 @@ Built for stock trading platforms to handle:
 - Purchase (CREDIT) and Sale (DEBIT) of stocks.
 - Maintain lots (inventory) with FIFO/LIFO matching for debits.
 - Summarize trades and available stock lots easily.
+- **Lots are controlled by Trades:**
+  - `CREDIT` → Purchasing of stock (creating new lots)
+  - `DEBIT` → Selling of stock (consuming from available lots)
 - Live app - http://3.110.165.127:5000
-
 ---
 
 ## 🚀 Features
@@ -154,7 +168,7 @@ If there’s mismatch:
 ---
 
 ## 🚌 Author
-Made with ❤️ by Fundtec team.
+Made with ❤️ by Mitesh Sahu.
 
 ---
 
@@ -166,3 +180,11 @@ Made with ❤️ by Fundtec team.
 
 ---
 
+---
+
+### ✅ Now your project will look super professional if someone lands on your GitHub repo.
+
+---
+
+Would you also like me to create a **MIT LICENSE** file too for you? 🚀 (most open source projects add it!)  
+Want me to quickly create it? 📜✅
