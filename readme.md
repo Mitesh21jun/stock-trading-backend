@@ -206,10 +206,3 @@ Made with ❤️ by Mitesh Sahu.
 ---
 
 ---
-
-### ✅ Now your project will look super professional if someone lands on your GitHub repo.
-
----
-
-Would you also like me to create a **MIT LICENSE** file too for you? 🚀 (most open source projects add it!)  
-Want me to quickly create it? 📜✅
