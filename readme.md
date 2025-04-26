@@ -6,6 +6,7 @@ Built for stock trading platforms to handle:
 - Purchase (CREDIT) and Sale (DEBIT) of stocks.
 - Maintain lots (inventory) with FIFO/LIFO matching for debits.
 - Summarize trades and available stock lots easily.
+- Live app - http://3.110.165.127:5000
 
 ---
 
