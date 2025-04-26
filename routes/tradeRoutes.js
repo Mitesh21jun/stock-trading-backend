@@ -1,8 +1,9 @@
 import express from "express";
-import { create, getAll } from "../controllers/tradeController.js";
+import { create, getAll, getStockSummary } from "../controllers/tradeController.js";
 
 const router = express.Router();
 
+router.get("/getStockSummary", getStockSummary); 
 router.post("/", create); 
 router.get("/", getAll); 
 

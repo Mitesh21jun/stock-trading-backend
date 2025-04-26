@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 import Trade from "../models/Trade.js";
 import Lot from "../models/Lot.js";
 import { handleDebitLots } from "../utils/lotHelper.js";
+import { tradeSummary } from "../pipeline/Trade.js"
 
 export const create = async (req, res) => {
   const session = await mongoose.startSession();
@@ -97,5 +98,21 @@ export const getAll = async (req, res) => {
     res
       .status(500)
       .json({ message: "Error fetching data", error: error?.message });
+  }
+};
+
+export const getStockSummary = async (req, res) => {
+  try {
+    const stockSummary = await Trade.aggregate(tradeSummary);
+    for (const stock of stockSummary) {
+      if (stock.net_quantity !== stock.total_available_quantity) {
+        stock.warning = `Mismatch: net_quantity (${stock.net_quantity}) ≠ total_available_quantity (${stock.total_available_quantity})`;
+      } else {
+        stock.warning = "All good, No mismatch in stocks"; // All good
+      }
+    }
+    res.status(200).json(stockSummary);
+  } catch (error) {
+    res.status(500).json({ message: "Error fetching trade summary", error: error.message });
   }
 };
