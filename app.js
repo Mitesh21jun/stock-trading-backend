@@ -14,6 +14,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use("/",  (req, res) => res.json({ status: 'Server Online' })); // Server Status check
 app.use("/api/trade", tradeRoutes);
 app.use("/api/lot", lotRoutes);
 
